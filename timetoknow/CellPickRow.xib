@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CellPickRowController">
+            <connections>
+                <outlet property="labelText" destination="LJB-cQ-s0b" id="pab-3V-bO3"/>
+                <outlet property="switcher" destination="KtH-AP-tZn" id="si5-by-h4Y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnV-Fx-8EL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VqV-SS-rQv">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                            <subviews>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KtH-AP-tZn">
+                                    <rect key="frame" x="5" y="35" width="51" height="31"/>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJB-cQ-s0b">
+                                    <rect key="frame" x="69" y="0.0" width="526" height="100"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="LJB-cQ-s0b" secondAttribute="trailing" constant="5" id="2EK-u1-Mrp"/>
+                                <constraint firstItem="LJB-cQ-s0b" firstAttribute="centerY" secondItem="VqV-SS-rQv" secondAttribute="centerY" id="Sux-oy-MLF"/>
+                                <constraint firstItem="LJB-cQ-s0b" firstAttribute="leading" secondItem="KtH-AP-tZn" secondAttribute="trailing" constant="15" id="bsV-YW-giA"/>
+                                <constraint firstItem="KtH-AP-tZn" firstAttribute="centerY" secondItem="VqV-SS-rQv" secondAttribute="centerY" id="jh5-OB-GEu"/>
+                                <constraint firstItem="LJB-cQ-s0b" firstAttribute="height" secondItem="VqV-SS-rQv" secondAttribute="height" id="sEg-pg-bu2"/>
+                                <constraint firstItem="KtH-AP-tZn" firstAttribute="leading" secondItem="VqV-SS-rQv" secondAttribute="leading" constant="5" id="wbM-9D-QaJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VqV-SS-rQv" firstAttribute="leading" secondItem="NnV-Fx-8EL" secondAttribute="leading" id="3J5-ym-bID"/>
+                        <constraint firstItem="VqV-SS-rQv" firstAttribute="top" secondItem="NnV-Fx-8EL" secondAttribute="top" constant="1" id="N3X-F4-aqv"/>
+                        <constraint firstAttribute="trailing" secondItem="VqV-SS-rQv" secondAttribute="trailing" id="WGL-Mz-5qg"/>
+                        <constraint firstItem="VqV-SS-rQv" firstAttribute="leading" secondItem="NnV-Fx-8EL" secondAttribute="leading" constant="-1" id="gHz-Dc-qJJ"/>
+                        <constraint firstAttribute="bottom" secondItem="VqV-SS-rQv" secondAttribute="bottom" id="k5E-tI-dge"/>
+                        <constraint firstItem="VqV-SS-rQv" firstAttribute="top" secondItem="NnV-Fx-8EL" secondAttribute="top" id="mYH-iG-H9i"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="N3X-F4-aqv"/>
+                            <exclude reference="gHz-Dc-qJJ"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NnV-Fx-8EL" secondAttribute="trailing" id="HPr-T8-gEv"/>
+                <constraint firstAttribute="bottom" secondItem="NnV-Fx-8EL" secondAttribute="bottom" id="YT0-Xu-kV6"/>
+                <constraint firstItem="NnV-Fx-8EL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="180" id="dFi-Mb-pVR"/>
+                <constraint firstItem="NnV-Fx-8EL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jfz-ZK-gsp"/>
+                <constraint firstItem="NnV-Fx-8EL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tsN-Hv-rRO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="dFi-Mb-pVR"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="336" y="134"/>
+        </view>
+    </objects>
+</document>

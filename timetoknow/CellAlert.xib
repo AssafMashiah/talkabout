@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CellAlertView">
+            <connections>
+                <outlet property="label" destination="eI7-9o-FUC" id="oyh-RZ-bHr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnV-Fx-8EL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqV-SS-rQv">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dialog2" translatesAutoresizingMaskIntoConstraints="NO" id="RD9-Zr-eYz">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your school" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI7-9o-FUC">
+                                    <rect key="frame" x="15" y="10" width="570" height="180"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="eI7-9o-FUC" firstAttribute="height" secondItem="VqV-SS-rQv" secondAttribute="height" multiplier="0.9" id="2Qh-VA-r46"/>
+                                <constraint firstItem="RD9-Zr-eYz" firstAttribute="leading" secondItem="VqV-SS-rQv" secondAttribute="leading" id="2fc-VF-IUC"/>
+                                <constraint firstAttribute="bottom" secondItem="RD9-Zr-eYz" secondAttribute="bottom" id="6nC-Pi-owm"/>
+                                <constraint firstItem="eI7-9o-FUC" firstAttribute="centerY" secondItem="VqV-SS-rQv" secondAttribute="centerY" id="Pfb-zF-AoV"/>
+                                <constraint firstItem="RD9-Zr-eYz" firstAttribute="top" secondItem="VqV-SS-rQv" secondAttribute="top" id="WAj-To-NkZ"/>
+                                <constraint firstItem="eI7-9o-FUC" firstAttribute="leading" secondItem="VqV-SS-rQv" secondAttribute="leading" constant="15" id="Zjw-Eh-uAm"/>
+                                <constraint firstAttribute="trailing" secondItem="eI7-9o-FUC" secondAttribute="trailing" constant="15" id="afX-ws-AeQ"/>
+                                <constraint firstAttribute="trailing" secondItem="RD9-Zr-eYz" secondAttribute="trailing" id="oUE-wp-8F7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VqV-SS-rQv" firstAttribute="leading" secondItem="NnV-Fx-8EL" secondAttribute="leading" id="3J5-ym-bID"/>
+                        <constraint firstItem="VqV-SS-rQv" firstAttribute="top" secondItem="NnV-Fx-8EL" secondAttribute="top" constant="1" id="N3X-F4-aqv"/>
+                        <constraint firstAttribute="trailing" secondItem="VqV-SS-rQv" secondAttribute="trailing" id="WGL-Mz-5qg"/>
+                        <constraint firstItem="VqV-SS-rQv" firstAttribute="leading" secondItem="NnV-Fx-8EL" secondAttribute="leading" constant="-1" id="gHz-Dc-qJJ"/>
+                        <constraint firstAttribute="bottom" secondItem="VqV-SS-rQv" secondAttribute="bottom" id="k5E-tI-dge"/>
+                        <constraint firstItem="VqV-SS-rQv" firstAttribute="top" secondItem="NnV-Fx-8EL" secondAttribute="top" id="mYH-iG-H9i"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="N3X-F4-aqv"/>
+                            <exclude reference="gHz-Dc-qJJ"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NnV-Fx-8EL" secondAttribute="trailing" id="HPr-T8-gEv"/>
+                <constraint firstAttribute="bottom" secondItem="NnV-Fx-8EL" secondAttribute="bottom" id="YT0-Xu-kV6"/>
+                <constraint firstItem="NnV-Fx-8EL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="180" id="dFi-Mb-pVR"/>
+                <constraint firstItem="NnV-Fx-8EL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jfz-ZK-gsp"/>
+                <constraint firstItem="NnV-Fx-8EL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tsN-Hv-rRO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="dFi-Mb-pVR"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="336" y="134"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dialog2" width="227" height="54"/>
+    </resources>
+</document>
